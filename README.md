@@ -1,8 +1,8 @@
-![](https://github.com/karam084/online-course-website)
+![](https://github.com/karam084/online-courses-capstone)
 
 # Project Name
 
-Online Course WebSite
+Online Course capstone project  
 
 > One paragraph statement about the project.
 
