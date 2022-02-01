@@ -66,6 +66,7 @@ li {
   height: 100%;
   position: absolute;
   z-index: -1;
+  opacity: 0.2;
 }
 
 .home {
@@ -505,7 +506,13 @@ li {
     z-index: -1;
   }
 
+  a,
   #about {
+    color: black;
+    margin-top: -5px;
+  }
+
+  #home {
     color: red;
   }
 
