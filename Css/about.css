@@ -25,6 +25,12 @@
   justify-content: center;
 }
 
+#cross {
+  position: absolute;
+  right: 60px;
+  top: 0;
+}
+
 .triangle {
   height: 0;
   width: 0;
@@ -395,6 +401,7 @@ li {
 
 .mobile-menu-items a:link {
   color: white;
+  text-decoration: none;
 }
 
 .menu a:hover {
@@ -407,13 +414,16 @@ li {
 }
 
 .menu-overlay {
+  position: fixed;
+  z-index: 200;
   display: block;
-  position: absolute;
   opacity: 0.9;
+  height: 100%;
+  width: 100%;
   background-color: hsl(234, 100%, 69%);
   transform: translateX(0);
   transition: transform 0.35s ease-in-out;
-  margin-top: 26em;
+  top: 0;
 }
 
 .hide-menu {
@@ -433,7 +443,7 @@ li {
   color: white;
   font-size: 62px;
   padding-right: 195px;
-  margin-top: 0;
+  margin-top: 220px;
 }
 
 .hide-hamburger {
