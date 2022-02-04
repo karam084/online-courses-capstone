@@ -2,14 +2,14 @@ const speakers = [
   {
     name: 'Abdel Rahman',
     image: './src-image/drzekri.jpg',
-    text: ' Vice President for Reasearch and Postgraduates Affairs',
-    description: 'ational Cancer Institute Verified email at nci.cu.edu.eg',
+    text: ' Vice President for Reasearch',
+    description: 'ational Cancer Institute',
   },
   {
     name: 'Mohamed Samy ',
     image: './src-image/profa.jpg',
-    text: ' Cairo University Vice President for Community Service',
-    description: 'Doctor of Philosophy in Law from Faculty of Pharmacy',
+    text: ' Cairo University Vice President',
+    description: 'Doctor of Philosophy',
   },
 ];
 
@@ -36,16 +36,28 @@ const speaker = [
   {
     image: './src-image/salma.jpg',
     name: 'Salima Ikram',
-    text: 'Distinguished University Professor of Egyptology at The American University in Cairo',
+    text: 'Distinguished University Professor',
     description:
-      ' worked as an archaeologist in Turkey, Sudan, Greece and the United States',
+      ' worked as an archaeologist in Turkey',
   },
   {
     image: './src-image/nagw.jpg',
     name: 'Nagwa Sherif',
-    text: 'Architectural Engineering at The American University in Cairo',
+    text: 'The American University in Cairo',
     description:
-      'She holds a PhD degree from University of Montreal, Canada in 1984',
+      'PhD degree from University of Montreal',
+  },
+  {
+    image: '../src-image/mohamed-othman.jpg',
+    name: 'Mohamed Othman',
+    text: 'Cairo University President',
+    description: 'ational Cancer Institute',
+  },
+  {
+    image: '../src-image/ProfGamal2.png',
+    name: ' Gamal Elshazly',
+    text: ' Vice President for Students affairs',
+    description: 'Doctor of Philosophy in Law from Faculty',
   },
 ];
 speaker.forEach((speaker1) => {

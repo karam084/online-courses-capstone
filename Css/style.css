@@ -17,9 +17,20 @@
   --third-color: #d3d3d3;
 }
 
+.justify-content-end {
+  display: none;
+}
+
 #hide {
   visibility: visible;
   margin-top: 0;
+}
+
+.d-block,
+.p-2,
+.bg-dark,
+.col-m {
+  background: none;
 }
 
 .header {
@@ -96,10 +107,11 @@ a {
 #myVideo {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 1000px;
   position: absolute;
   z-index: -1;
   opacity: 0.2;
+  top: 0;
 }
 
 .home {
@@ -121,7 +133,7 @@ a {
 .det {
   display: flex;
   flex-direction: column;
-  width: 68%;
+  width: 80%;
   margin-left: 37px;
   color: var(--second-color);
   align-items: center;
@@ -135,7 +147,7 @@ a {
   flex-direction: column;
   font-size: 25px;
   font-weight: 900;
-  margin-top: 91px;
+  margin-top: 24px;
   margin-left: 42px;
   width: 50%;
 }
@@ -157,7 +169,7 @@ a {
   align-items: center;
   font-size: 15px;
   font-weight: 500;
-  width: 50%;
+  width: 65%;
   margin-top: 1px;
   margin-left: 50px;
   border: 1px solid;
@@ -167,18 +179,18 @@ a {
 
 .under-l {
   border-bottom: 2px solid red;
-  width: 5%;
+  width: 11%;
 }
 
 .under-ll {
   border-bottom: 2px solid red;
-  width: 5%;
+  width: 11%;
 }
 
 .main-program {
   display: flex;
   flex-direction: column;
-  background: radial-gradient(var(--first-color), var(--third-color));
+  background: radial-gradient(var(--first-color), hsl(0deg 0% 13%));
   width: 100%;
   height: 100%;
   color: #d3d3d3;
@@ -199,8 +211,7 @@ a {
   flex-direction: column;
   text-align: center;
   transition: border-width 0.6s linear;
-  width: 100%;
-  height: 100%;
+  margin-top: 40px;
 }
 
 .main-pro :hover {
@@ -259,6 +270,7 @@ a {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  height: 176px;
 }
 
 .feature-speak {
@@ -278,7 +290,7 @@ a {
 }
 
 .speaker-info {
-  margin-top: 25px;
+  margin-top: 64px;
   margin-left: 13px;
   text-align: start;
 }
@@ -463,7 +475,7 @@ a {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header {
     display: flex;
     flex-direction: column;
@@ -472,14 +484,20 @@ a {
     align-items: stretch;
   }
 
+  #navbar {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
   #myVideo {
     object-fit: cover;
-    width: 100vw;
-    height: 100%;
+    height: 1000px;
     position: absolute;
-    top: 165px;
-    left: 0;
     z-index: -1;
+    opacity: 0.2;
   }
 
   #about {
@@ -489,7 +507,9 @@ a {
   #comp {
     color: red;
     border: 7px solid;
-    padding: 10px;
+    padding: 7px;
+    width: 100%;
+    margin-left: 24px;
   }
 
   .home {
@@ -553,7 +573,7 @@ a {
     align-items: center;
     text-align: center;
     justify-content: center;
-    background: radial-gradient(var(--first-color), var(--third-color));
+    background: radial-gradient(var(--first-color), hsl(0deg 0% 13%));
     height: 550px;
   }
 
@@ -642,18 +662,21 @@ a {
   }
 
   #imag-log {
-    width: 66%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: start;
     margin-top: -20px;
-    margin-left: -4em;
+    height: 53%;
   }
 
   .main-box {
     display: flex;
     flex-direction: row;
+    height: 52%;
+    align-items: center;
     justify-content: center;
+    text-align: center;
   }
 
   .main-box i {
@@ -708,10 +731,8 @@ a {
     list-style: none;
     color: black;
     margin-top: 22px;
-    font-size: 20px;
-    margin-left: 4em;
-    width: 102%;
-    gap: 36px;
+    font-size: 9px;
+    gap: 20px;
   }
 
   .humb {
@@ -726,7 +747,7 @@ a {
     display: flex;
     flex-direction: column;
     background-color: var(--first-color);
-    margin-top: 27em;
+    margin-top: 33em;
     height: 11em;
     width: 100vw;
   }
@@ -847,13 +868,14 @@ a {
     position: absolute;
     margin-top: -520px;
     margin-left: 5em;
+    width: 76%;
   }
 
   .speaker-desc {
     color: red;
     position: absolute;
     margin-top: -480px;
-    width: 77%;
+    width: 55%;
   }
 
   .speaker-img {
@@ -867,12 +889,23 @@ a {
 
   .speaker-mor {
     position: relative;
-    margin-top: -430px;
+    margin-top: -429px;
     width: 100%;
   }
 
   #hidee {
     visibility: visible;
-    margin-top: 50em;
+    margin-top: 55em;
+  }
+
+  .justify-content-end {
+    display: flex;
+  }
+
+  .d-block,
+  .p-2,
+  .bg-dark,
+  .col-m {
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
   }
 }
