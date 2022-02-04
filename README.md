@@ -30,10 +30,6 @@ Online Course capstone project
 
 ![Screenshot](https://user-images.githubusercontent.com/77942746/152469662-9e96c0b8-5180-42d9-b473-0ebc61cd989a.png)
 
-
-
-
-
 ### Video link about project
 
 (https://www.loom.com/share/32a0ee3361cd4f6dbad65f5b52496d5d)
