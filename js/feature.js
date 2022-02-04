@@ -48,13 +48,13 @@ const speaker = [
       'PhD degree from University of Montreal',
   },
   {
-    image: '../src-image/mohamed-othman.jpg',
+    image: './src-image/mohamed-othman.jpg',
     name: 'Mohamed Othman',
     text: 'Cairo University President',
     description: 'ational Cancer Institute',
   },
   {
-    image: '../src-image/ProfGamal2.png',
+    image: './src-image/ProfGamal2.png',
     name: ' Gamal Elshazly',
     text: ' Vice President for Students affairs',
     description: 'Doctor of Philosophy in Law from Faculty',
