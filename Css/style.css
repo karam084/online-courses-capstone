@@ -17,6 +17,11 @@
   --third-color: #d3d3d3;
 }
 
+#hide {
+  visibility: visible;
+  margin-top: 0;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -266,26 +271,19 @@ a {
 }
 
 .feature {
-  display: flex;
   align-items: center;
-  flex-direction: column;
   margin-top: 60px;
   width: 100%;
   text-align: center;
 }
 
 .speaker-info {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   margin-top: 25px;
   margin-left: 13px;
   text-align: start;
 }
 
 .speaker-name {
-  display: flex;
-  flex-direction: column;
   margin-left: 5em;
   margin-top: -152px;
   font-size: 25px;
@@ -293,8 +291,6 @@ a {
 }
 
 .speaker-desc {
-  display: flex;
-  flex-direction: column;
   color: red;
   margin-left: 7em;
   font-size: 17px;
@@ -302,8 +298,6 @@ a {
 }
 
 .speaker-img {
-  display: flex;
-  flex-direction: row;
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
@@ -312,8 +306,6 @@ a {
 }
 
 .speaker-mor {
-  display: flex;
-  flex-direction: column;
   margin-left: 8em;
   width: 59%;
   margin-top: 0;
@@ -562,7 +554,7 @@ a {
     text-align: center;
     justify-content: center;
     background: radial-gradient(var(--first-color), var(--third-color));
-    height: 200px;
+    height: 550px;
   }
 
   .main-pro {
@@ -570,7 +562,8 @@ a {
     flex-direction: column;
     text-align: center;
     transition: border-width 0.6s linear;
-    width: 80%;
+    width: 75%;
+    height: 50%;
   }
 
   .main-pro :hover {
@@ -587,15 +580,6 @@ a {
     color: white;
     text-decoration: underline;
     margin-top: 40px;
-  }
-
-  .speaker1 {
-    display: flex;
-    flex-direction: column;
-    gap: 433px;
-    width: 61%;
-    margin-left: 12em;
-    margin-top: -3em;
   }
 
   .media_icon {
@@ -738,69 +722,11 @@ a {
     display: none;
   }
 
-  .feature {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 33px;
-  }
-
-  .speaker-info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-left: 16px;
-    text-align: start;
-  }
-
-  .speaker {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .speaker-name1 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 22em;
-    margin-top: -23em;
-    font-size: 25px;
-    width: 24%;
-    font-weight: 500;
-  }
-
-  .speaker-desc1 {
-    display: flex;
-    flex-direction: column;
-    color: red;
-    margin-left: 33em;
-    font-size: 17px;
-    width: 41%;
-  }
-
-  .speaker1-img {
-    background-color: rgb(255, 255, 255);
-    border-radius: 0.25rem;
-    margin-left: 27em;
-    margin-top: -19em;
-    width: 12%;
-    height: 2%;
-  }
-
-  .speaker-mor1 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 38em;
-    width: 40%;
-    font-size: 15px;
-    margin-top: -16px;
-  }
-
   .partner {
     display: flex;
     flex-direction: column;
     background-color: var(--first-color);
-    margin-top: 5em;
+    margin-top: 27em;
     height: 11em;
     width: 100vw;
   }
@@ -893,5 +819,60 @@ a {
     color: var(--first-color);
     margin-top: -57px;
     margin-left: 39em;
+  }
+
+  .feature-speak {
+    display: grid;
+    grid-column: 1 / span 2;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+  }
+
+  .speaker-info {
+    display: grid;
+    grid-template-columns: 56.667% 47.334%;
+    position: absolute;
+    margin-top: 24pc;
+    grid-gap: 20px;
+    visibility: visible;
+  }
+
+  .speaker-name {
+    font-weight: 800;
+    position: absolute;
+    margin-top: -520px;
+    margin-left: 5em;
+  }
+
+  .speaker-desc {
+    color: red;
+    position: absolute;
+    margin-top: -480px;
+    width: 77%;
+  }
+
+  .speaker-img {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(222, 226, 230);
+    border-radius: 0.25rem;
+    max-width: 15%;
+    height: 134px;
+    visibility: visible;
+  }
+
+  .speaker-mor {
+    position: relative;
+    margin-top: -430px;
+    width: 100%;
+  }
+
+  #hidee {
+    visibility: visible;
+    margin-top: 50em;
   }
 }
