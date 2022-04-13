@@ -2,7 +2,8 @@
 
 # Project Name
 
-Online Course capstone project  
+Online Course capstone project 
+This project about online courses and content of two pages Home page and About page. This project work normal on Mobile app and desktop version.
 
 ![Screenshot](https://user-images.githubusercontent.com/77942746/152469213-7df2dcad-1368-4063-ac6a-75680eac8e6d.png)
 
